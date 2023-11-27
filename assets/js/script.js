@@ -5,6 +5,7 @@ const messege2 = document.querySelector('.messege-box2')
 const messege2P = document.querySelector('.messege-box2 .pesan p')
 const hilang1 = document.querySelector('.hilang1')
 const hilang2 = document.querySelector('.hilang2')
+const hilang3 = document.querySelector('.hilang3')
 const nama = document.querySelectorAll('.nama h2')[0]
 const nama1 = document.querySelectorAll('.nama h2')[1]
 const waktu = document.getElementById('waktu')
@@ -29,8 +30,8 @@ hari.innerHTML = `${dayID()}, ${tgl} ${monthID()} ${year}`
 jam.innerHTML = `${hour}:${minutes}`
 
 // Dirubah 
-const pengirim = "dea ❤";
-const nomorWa = "6289668068213" // awalan nomor 0 harus di awalin 62
+const pengirim = "Mesia ❤";
+const nomorWa = "6285311047174" // awalan nomor 0 harus di awalin 62
 const textWa = "Ah bisa aja kamu"
 const pesan = `Pada akhirnya kita berdua menjadi dua orang penjahat: Kamu yang dengan hebatnya bisa mencuri hatiku, begitu juga aku yang berhasil mencuri hatimu`;
 
@@ -58,14 +59,16 @@ hilang1.addEventListener('click', () => {
   Swal.fire({
     imageUrl: "assets/img/stiker_mylove.gif",
     imageHeight: 120,
-    title: 'Halo Kenalan Dong, Nama Kamu Siapa ?',
-    html: `<input type="text" id="login" class="swal2-input" placeholder="Nama Kamu">`,
+    title: 'Hai Mesia apa kabar , Silahkan Masukan Nama Kamu  ',
+    html: `<input type="text" id="login" class="swal2-input" placeholder="masukan Nama !">`,
     confirmButtonText: 'Kirim',
     focusConfirm: false,
     preConfirm: () => {
       const login = Swal.getPopup().querySelector('#login').value
       if (!login) {
-        Swal.showValidationMessage(`Masukin Nama Kamu Dong, Aku Mau Kenalan :(`)
+        Swal.showValidationMessage(
+          `Masukin Nama Kamu Dong, Aku Mau Kenalan :(`
+        );
       }
       return { login }
     }
