@@ -86,7 +86,7 @@ body {
 }
 
 .content .pesan {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 #button {
@@ -180,8 +180,8 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 70px) {
+@media screen and (min-width: 600px) {
   .body {
-    width: 439px;
+    width: 470px;
   }
 }
