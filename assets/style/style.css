@@ -86,7 +86,7 @@ body {
 }
 
 .content .pesan {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 #button {
@@ -97,7 +97,7 @@ body {
 }
 
 #button button {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Fredoka';
   border-style: none;
   border-radius: 0.5rem;
@@ -180,8 +180,8 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 100px) {
   .body {
-    width: 470px;
+    width: 439px;
   }
 }
